@@ -1,4 +1,13 @@
 function y = goldenSearch(f,xU,xL,direction,tol,plot)
+%% USAGE
+% f: function to evaluate
+% xU: upper boundary
+% xL: lower boundary
+% direction: 'min' minimizer or 'max' maximizer 
+% tol: tolerance
+% plot: performance plots
+% y = min(f) or max(f) in [xL xU]
+
 % STEP 1: INITIALIZE SOME VARIABLES
 rho = (sqrt(5)-1)/2;
 d = abs(xU-xL);
